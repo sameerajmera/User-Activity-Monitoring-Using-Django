@@ -1,5 +1,3 @@
-# FullThrottleAssignment
-
 # Monitoring User Activity Period Over a Month Online
 This Project aims at maintaining the data base for user activity period,that is the time when a particular user started the session and when that particular session gets over and along with that, it fetches all the data for activity periods and deliver it to the user online as the user only needs to hit the url.
 This project is hosted on the publicly accessible cloud Heroku, so user can easily access and see the activity period of particular users in real time over all duration.
@@ -46,7 +44,7 @@ The REST API to the example APP of user activity period is described below
 ### Request
 Enter the below url by selcting method = GET in postman tab
 ```
-GET http://django-record.herokuapp.com/
+GET http://localhost:8080/
 ```
 ### Response
  The below response is of json type
@@ -91,64 +89,3 @@ GET http://django-record.herokuapp.com/
     ]
 }
 ```
-
-## Call APIs on Brwoser(any of your choice)
-
-### Request
-Enter the below url in google chrome or any browser of your choice
-
-[Activity Period Monitoring](http://django-record.herokuapp.com/)
-
-### Response
- The below response is of json type
-```
-Period Model
-GET /
-HTTP 200 OK
-Allow: GET, HEAD, OPTIONS
-Content-Type: application/json
-Vary: Accept
-
-{
-    "ok": "true",
-    "members": [
-        {
-            "id": "1",
-            "real_name": "sameer",
-            "tz": "Asia/Kolkata",
-            "activity_periods": [
-                {
-                    "start_time": "2020-10-24T20:44:01.873938Z",
-                    "end_time": "2020-10-24T21:01:49.210017Z"
-                },
-                {
-                    "start_time": "2020-10-24T21:09:22.247201Z",
-                    "end_time": "2020-10-24T21:09:27.730550Z"
-                },
-                {
-                    "start_time": "2020-10-24T21:09:46.519321Z",
-                    "end_time": "2020-10-24T21:09:49.581942Z"
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "real_name": "amit",
-            "tz": "Asia/Kolkata",
-            "activity_periods": [
-                {
-                    "start_time": "2020-10-24T21:09:04.548885Z",
-                    "end_time": "2020-10-24T21:09:10.225383Z"
-                },
-                {
-                    "start_time": "2020-10-24T21:09:34.968815Z",
-                    "end_time": "2020-10-24T21:09:38.052566Z"
-                }
-            ]
-        }
-    ]
-}
-```
-# Contact Details
-
-Email: sameerajmera108@gmail.com
