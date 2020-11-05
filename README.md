@@ -15,7 +15,7 @@ To fetch the source code from the git to your local machine,we need to run the b
 
 
 ```
-git clone https://github.com/sammortals/FullThrottleAssignment.git
+https://github.com/sameerajmera/User-Activity-Monitoring-Using-Django.git
 ```
 
 <b> Packages Installation </b>
